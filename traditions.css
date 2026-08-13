@@ -1,0 +1,1412 @@
+:root {
+
+    --bg: #050505;
+
+    --gold: #e1aa55;
+
+    --gold-light: #f5ce8a;
+
+    --orange: #d96d2d;
+
+    --text: #f4eee4;
+
+    --mono: "DM Mono", monospace;
+
+    --serif: "Cinzel", serif;
+
+    --sans: "Manrope", sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: var(--sans);
+
+    overflow-x: hidden;
+
+}
+
+.global-grid-bg {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.03) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.03) 1px,
+            transparent 1px
+        );
+
+    background-size: 78px 78px;
+}
+/* =====================================
+   NOISE
+===================================== */
+
+.noise {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    opacity: .025;
+
+}
+
+
+/* =====================================
+   MOUSE GLOW
+===================================== */
+
+.mouse-glow {
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(225,170,85,.07),
+            transparent 68%
+        );
+
+    will-change: transform;
+
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 5%;
+
+    z-index: 1000;
+
+    transition: .35s;
+
+}
+
+
+nav.scrolled {
+
+    height: 66px;
+
+    background:
+        rgba(5,5,5,.82);
+
+   -webkit-backdrop-filter: blur(18px);
+    backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.07);
+
+}
+
+
+.nav-logo {
+
+    font-family: var(--serif);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+.logo-bracket {
+
+    color: var(--orange);
+
+    font-family: var(--mono);
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 28px;
+
+    margin-left: 60px;
+
+}
+
+
+.nav-links a {
+
+    color:
+        rgba(255,255,255,.4);
+
+    text-decoration: none;
+
+    font-family: var(--mono);
+
+    font-size: 8px;
+
+}
+
+
+.nav-links a:hover,
+.nav-links .active {
+
+    color: var(--gold);
+
+}
+
+
+.nav-actions {
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.system-live {
+
+    font-family: var(--mono);
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color:
+        rgba(255,255,255,.4);
+
+}
+
+
+.system-live span {
+
+    width: 6px;
+
+    height: 6px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+    background: #73cc8a;
+
+    box-shadow:
+        0 0 10px #73cc8a;
+
+}
+
+
+.nav-instagram {
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    display: grid;
+
+    place-items: center;
+
+    color:
+        rgba(255,255,255,.6);
+
+}
+
+
+.nav-instagram svg {
+
+    width: 16px;
+
+}
+
+
+.nav-instagram:hover {
+
+    color: var(--gold);
+
+}
+
+
+.back-button {
+
+    padding: 10px 13px;
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-family: var(--mono);
+
+    font-size: 8px;
+
+    text-decoration: none;
+
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.archive-hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        130px 8% 80px;
+
+    overflow: hidden;
+
+    
+
+}
+
+
+.archive-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    
+
+    background-size:
+        70px 70px;
+
+}
+
+
+.archive-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(225,170,85,.08);
+
+}
+
+
+.circle-one {
+
+    width: 650px;
+    height: 650px;
+
+    right: -150px;
+
+    animation:
+        rotate 35s linear infinite;
+
+}
+
+
+.circle-two {
+
+    width: 450px;
+    height: 450px;
+
+    right: -40px;
+
+    border-style: dashed;
+
+    animation:
+        rotateBack 24s linear infinite;
+
+}
+
+
+@keyframes rotate {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes rotateBack {
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 4;
+
+}
+
+
+.section-code {
+
+    color: var(--gold);
+
+    font-family: var(--mono);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.terminal-command {
+
+    font-family: var(--mono);
+
+    font-size: 9px;
+
+    color:
+        rgba(255,255,255,.3);
+
+    margin-bottom: 20px;
+
+}
+
+
+.terminal-command span {
+
+    color: #73cc8a;
+
+}
+
+
+.archive-hero h1 {
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(60px,8vw,120px);
+
+    line-height: .95;
+
+    font-weight: 500;
+
+}
+
+
+.archive-hero h1 span {
+
+    color: var(--gold-light);
+
+}
+
+
+.hero-content > p {
+
+    margin-top: 27px;
+
+    line-height: 1.8;
+
+    color:
+        rgba(255,255,255,.45);
+
+}
+
+
+.archive-status {
+
+    margin-top: 38px;
+
+    display: flex;
+
+    gap: 30px;
+
+    font-family: var(--mono);
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color:
+        rgba(255,255,255,.3);
+
+}
+
+
+.archive-status span {
+
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+
+    background: #73cc8a;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+}
+
+
+.archive-terminal {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: 12%;
+
+    width: 250px;
+
+    padding: 17px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    background:
+        rgba(5,5,5,.55);
+
+    font-family: var(--mono);
+
+}
+
+
+.archive-terminal p {
+
+    color: var(--gold);
+
+    font-size: 7px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.archive-terminal code {
+
+    display: block;
+
+    font-size: 7px;
+
+    line-height: 2;
+
+    color:
+        rgba(255,255,255,.3);
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    min-height: 120px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+}
+
+
+.footer-logo {
+
+    font-family: var(--mono);
+
+    color: var(--orange);
+
+}
+
+
+.footer-logo span {
+
+    font-family: var(--serif);
+
+    color: white;
+
+}
+
+
+footer p {
+
+    font-family: var(--mono);
+
+    font-size: 7px;
+
+    color:
+        rgba(255,255,255,.3);
+
+}
+
+
+.developer-credit {
+
+    margin-left: auto;
+
+}
+
+
+.developer-credit span {
+
+    color: var(--gold);
+
+}
+
+
+footer code {
+
+    font-family: var(--mono);
+
+    color: var(--gold);
+
+    font-size: 7px;
+
+    opacity: .4;
+
+}
+
+
+/* =====================================
+   RESPONSIVE NAV / HERO / FOOTER
+===================================== */
+
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: 65px;
+        padding: 0 18px;
+    }
+
+    .system-live,
+    .back-button {
+        display: none;
+    }
+
+    .nav-logo {
+        font-size: 12px;
+    }
+
+    .archive-hero {
+        min-height: 90vh;
+        padding: 110px 20px 60px;
+    }
+
+    .archive-hero h1 {
+        font-size: clamp(48px, 14vw, 68px);
+    }
+
+    .archive-terminal {
+        display: none;
+    }
+
+    footer {
+        padding: 35px 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .developer-credit {
+        margin-left: 0;
+    }
+}
+
+
+/* ===================================================
+   HORIZON STYLE ARCHIVE
+=================================================== */
+
+.horizon-archive {
+
+    position: relative;
+
+    padding:
+        140px 8%
+        160px;
+
+    max-width:
+        1200px;
+
+    margin:
+        auto;
+
+}
+
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.archive-title {
+
+    margin-bottom:
+        90px;
+
+}
+
+
+.archive-title h2 {
+
+    font-family:
+        var(--serif);
+
+    font-size:
+        clamp(
+            52px,
+            7vw,
+            95px
+        );
+
+    line-height:
+        1;
+
+    font-weight:
+        500;
+
+}
+
+
+.archive-title h2 span {
+
+    color:
+        var(--gold);
+
+}
+
+
+.archive-title > p {
+
+    margin-top:
+        20px;
+
+    color:
+        rgba(255,255,255,.35);
+
+    font-family:
+        var(--mono);
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+
+/* ===================================================
+   YEAR GROUP
+=================================================== */
+
+.archive-year-group {
+
+    margin-bottom:
+        95px;
+
+}
+
+
+
+/* ===================================================
+   YEAR HEADING
+=================================================== */
+
+.archive-year-heading {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.archive-year-heading > span {
+
+    font-family:
+        var(--serif);
+
+    font-size:
+        30px;
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.archive-year-heading > div {
+
+    height:
+        1px;
+
+    flex:
+        1;
+
+    background:
+
+        linear-gradient(
+            to right,
+            rgba(225,170,85,.3),
+            rgba(255,255,255,.04)
+        );
+
+}
+
+
+.archive-year-heading code {
+
+    font-family:
+        var(--mono);
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        2px;
+
+    color:
+        rgba(255,255,255,.25);
+
+}
+
+
+
+/* ===================================================
+   ARCHIVE ROW
+=================================================== */
+
+.archive-row {
+
+    min-height:
+        88px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        55px
+        minmax(0,1fr)
+        90px
+        40px;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    padding:
+        12px 18px;
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.07);
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    transition:
+        padding .35s
+        cubic-bezier(.22,1,.36,1),
+
+        border-color .3s,
+
+        background .3s;
+
+}
+
+
+.archive-year-group
+.archive-row:last-child {
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+
+/* ===================================================
+   HOVER BACKGROUND
+=================================================== */
+
+.archive-row::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(225,170,85,.10),
+            rgba(217,109,45,.025),
+            transparent 70%
+        );
+
+    transform:
+        translateX(-105%);
+
+    transition:
+        transform .5s
+        cubic-bezier(.22,1,.36,1);
+
+}
+
+
+.archive-row:hover::before {
+
+    transform:
+        translateX(0);
+
+}
+
+
+.archive-row:hover {
+
+    padding-left:
+        27px;
+
+    border-color:
+        rgba(225,170,85,.30);
+
+}
+
+
+
+/* ===================================================
+   INDEX
+=================================================== */
+
+.archive-index {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    font-family:
+        var(--mono);
+
+    font-size:
+        8px;
+
+    color:
+        rgba(255,255,255,.22);
+
+}
+
+
+
+/* ===================================================
+   EVENT
+=================================================== */
+
+.archive-event {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+}
+
+
+.archive-category {
+
+    font-family:
+        var(--mono);
+
+    color:
+        var(--gold);
+
+    font-size:
+        6px;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.archive-event h3 {
+
+    margin-top:
+        4px;
+
+    font-family:
+        var(--serif);
+
+    font-size:
+        clamp(
+            17px,
+            2vw,
+            24px
+        );
+
+    font-weight:
+        500;
+
+    color:
+        rgba(255,255,255,.78);
+
+    transition:
+        color .3s;
+
+}
+
+
+.archive-row:hover
+.archive-event h3 {
+
+    color:
+        white;
+
+}
+
+
+
+/* ===================================================
+   DATE
+=================================================== */
+
+.archive-date {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    text-align:
+        right;
+
+    font-family:
+        var(--mono);
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        2px;
+
+    color:
+        rgba(255,255,255,.22);
+
+}
+
+
+
+/* ===================================================
+   ARROW
+=================================================== */
+
+.archive-arrow {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    font-size:
+        18px;
+
+    color:
+        rgba(255,255,255,.25);
+
+    text-align:
+        right;
+
+    transition:
+        transform .3s,
+        color .3s;
+
+}
+
+
+.archive-row:hover
+.archive-arrow {
+
+    color:
+        var(--gold-light);
+
+    transform:
+        translate(
+            4px,
+            -4px
+        );
+
+}
+
+
+
+/* ===================================================
+   SMALL GLOW
+=================================================== */
+
+.archive-row::after {
+
+    content: "";
+
+    position:
+        absolute;
+
+    width:
+        180px;
+
+    height:
+        180px;
+
+    right:
+        -100px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(225,170,85,.08),
+            transparent 70%
+        );
+
+    opacity:
+        0;
+
+    transition:
+        opacity .3s;
+
+}
+
+
+.archive-row:hover::after {
+
+    opacity:
+        1;
+
+}
+
+
+
+/* ===================================================
+   TABLET
+=================================================== */
+
+@media(max-width:900px) {
+
+    .horizon-archive {
+
+        padding:
+            110px 6%;
+
+    }
+
+
+    .archive-row {
+
+        grid-template-columns:
+            40px
+            1fr
+            40px;
+
+    }
+
+
+    .archive-date {
+
+        display:
+            none;
+
+    }
+
+}
+
+
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+@media(max-width:600px) {
+
+    .horizon-archive {
+
+        padding:
+            90px 18px;
+
+    }
+
+
+    .archive-title {
+
+        margin-bottom:
+            60px;
+
+    }
+
+
+    .archive-title h2 {
+
+        font-size:
+            46px;
+
+    }
+
+
+    .archive-year-group {
+
+        margin-bottom:
+            65px;
+
+    }
+
+
+    .archive-year-heading > span {
+
+        font-size:
+            24px;
+
+    }
+
+
+    .archive-year-heading code {
+
+        display:
+            none;
+
+    }
+
+
+    .archive-row {
+
+        min-height:
+            78px;
+
+        grid-template-columns:
+            28px
+            minmax(0,1fr)
+            28px;
+
+        gap:
+            10px;
+
+        padding:
+            10px 4px;
+
+    }
+
+
+    .archive-row:hover {
+
+        padding-left:
+            8px;
+
+    }
+
+
+    .archive-category {
+
+        font-size:
+            5.5px;
+
+    }
+
+
+    .archive-event h3 {
+
+        font-size:
+            16px;
+
+    }
+
+
+    .archive-arrow {
+
+        font-size:
+            15px;
+
+    }
+
+}
+/* =========================================
+   MOBILE - ARCHIVE HERO HEADING FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+    .archive-hero {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .archive-hero h1 {
+        font-size: clamp(
+            38px,
+            10.5vw,
+            52px
+        ) !important;
+
+        line-height: .98;
+
+        letter-spacing: -.02em;
+
+        max-width: 100%;
+    }
+
+}@media (max-width: 600px) {
+
+    .archive-hero {
+        min-height: auto !important;
+
+        padding:
+            110px 20px
+            35px !important;
+    }
+
+    .archive-section {
+        padding:
+            35px 18px
+            80px !important;
+    }
+
+}

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        People | Aarambh
+    </title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+ <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://res.cloudinary.com/sn8krgue/image/upload/v1786532656/aarambh-logo1.png"
+>
+
+<link
+    rel="apple-touch-icon"
+    href="https://res.cloudinary.com/sn8krgue/image/upload/v1786532656/aarambh-logo1.png"
+>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #050505;
+        }
+    </style>
+
+    <!-- PEOPLE CSS -->
+
+    <link
+        rel="stylesheet"
+        href="./people.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="global-grid-bg"></div>
+<!-- =========================================
+     GLOBAL EFFECTS
+========================================= -->
+
+<div class="noise"></div>
+
+<div class="mouse-glow" id="mouseGlow"></div>
+
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav id="navbar">
+
+    <!-- SAME AARAMBH LOGO -->
+
+    <a
+        href="./index.html"
+        class="nav-logo"
+    >
+
+        <span class="logo-bracket">
+            &lt;
+        </span>
+
+        AARAMBH
+
+        <span class="logo-bracket">
+            /&gt;
+        </span>
+
+    </a>
+
+
+    <!-- NAV LINKS -->
+
+    <div class="nav-links">
+
+        <a href="./index.html#home">
+            01.Home
+        </a>
+
+        <a href="./index.html#experiences">
+            02.Experiences
+        </a>
+
+        <a href="./index.html#culture">
+            03.Culture
+        </a>
+
+        <a
+            href="./people.html"
+            class="active"
+        >
+            04.People
+        </a>
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <div class="nav-actions">
+
+        <div class="system-live">
+
+            <span></span>
+
+            SYSTEM LIVE
+
+        </div>
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/YOUR_USERNAME/"
+            target="_blank"
+            class="nav-instagram"
+            aria-label="Aarambh Instagram"
+        >
+
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+            >
+
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                ></rect>
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                ></circle>
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                ></circle>
+
+            </svg>
+
+        </a>
+
+
+        <a
+            href="./index.html"
+            class="back-button"
+        >
+
+            ← BACK
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header class="people-hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-orbit orbit-one"></div>
+
+    <div class="hero-orbit orbit-two"></div>
+
+
+    <div class="people-hero-content">
+
+        <div class="section-code">
+
+            04 / PEOPLE_DIRECTORY
+
+        </div>
+
+
+        <div class="hero-command">
+
+            <span>
+                $
+            </span>
+
+            connect(people);
+
+        </div>
+
+
+        <h1>
+
+            The People
+
+            <br>
+
+            Behind
+
+            <span>
+                Aarambh.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Different branches.
+            Different stories.
+            One community.
+
+        </p>
+
+
+        <div class="people-status">
+
+            <div>
+
+                <span class="status-dot"></span>
+
+                20 MEMBERS LOADED
+
+            </div>
+
+
+            <div>
+                IIIT PUNE
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DECORATIVE CODE -->
+
+    <div class="hero-terminal">
+
+        <p>
+            aarambh@iiitpune:~/people
+        </p>
+
+        <code>
+            fetchMembers();
+        </code>
+
+        <code>
+            status: connected
+        </code>
+
+        <code>
+            community: active
+        </code>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     PEOPLE SECTION
+========================================= -->
+
+<main class="people-section">
+
+    <div class="people-header">
+
+        <div>
+
+            <div class="section-code">
+                COMMUNITY / MEMBERS
+            </div>
+
+            <h2>
+                Meet the
+                <span>Community.</span>
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Hover over a profile
+            <br>
+            to discover the people
+            behind Aarambh.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PEOPLE GRID
+    ========================================= -->
+
+    <div class="people-grid">
+
+
+        <!-- PERSON 01 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                01
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=12"
+                    alt="Member 01"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 01
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 02 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                02
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=5"
+                    alt="Member 02"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 02
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 03 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                03
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=15"
+                    alt="Member 03"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 03
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 04 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                04
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=20"
+                    alt="Member 04"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 04
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 05 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                05
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=25"
+                    alt="Member 05"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 05
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 06 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                06
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=30"
+                    alt="Member 06"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 06
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 07 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                07
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=33"
+                    alt="Member 07"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 07
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 08 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                08
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=36"
+                    alt="Member 08"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 08
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 09 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                09
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=41"
+                    alt="Member 09"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 09
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 10 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                10
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=45"
+                    alt="Member 10"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 10
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 11 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                11
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=48"
+                    alt="Member 11"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 11
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 12 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                12
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=52"
+                    alt="Member 12"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 12
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 13 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                13
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=56"
+                    alt="Member 13"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 13
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 14 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                14
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=58"
+                    alt="Member 14"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 14
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 15 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                15
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=60"
+                    alt="Member 15"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 15
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 16 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                16
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=62"
+                    alt="Member 16"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 16
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 17 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                17
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=64"
+                    alt="Member 17"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 17
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 18 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                18
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=67"
+                    alt="Member 18"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 18
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 19 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                19
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=68"
+                    alt="Member 19"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    CSE
+                </span>
+
+                <h3>
+                    Member Name 19
+                </h3>
+
+                <p>
+                    Computer Science & Engineering
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PERSON 20 -->
+
+        <article class="person-card">
+
+            <div class="person-number">
+                20
+            </div>
+
+            <div class="person-image">
+
+                <img
+                    src="https://i.pravatar.cc/600?img=70"
+                    alt="Member 20"
+                >
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+            <div class="person-content">
+
+                <span class="branch">
+                    ECE
+                </span>
+
+                <h3>
+                    Member Name 20
+                </h3>
+
+                <p>
+                    Electronics & Communication
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        &lt;
+
+        <span>
+            AARAMBH
+        </span>
+
+        /&gt;
+
+    </div>
+
+
+    <p>
+        CULTURAL COMMUNITY · IIIT PUNE
+    </p>
+
+
+    <p class="developer-credit">
+
+        Developed by
+
+        <span>
+            Aniket Kadam
+        </span>
+
+    </p>
+
+
+    <code>
+        PEOPLE.EXE
+    </code>
+
+</footer>
+
+
+
+<!-- =========================================
+     PAGE SCRIPT
+========================================= -->
+
+<script src="./people.js"></script>
+
+
+</body>
+</html>

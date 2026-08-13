@@ -62,7 +62,7 @@ body {
             rgba(8, 6, 5, 0.76),
             rgba(8, 6, 5, 0.82)
         ),
-        url("img.jpeg");
+        url("https://res.cloudinary.com/sn8krgue/image/upload/v1786654104/img.jpg");
 
     background-size: cover;
     background-position: center;
@@ -1122,7 +1122,7 @@ nav.scrolled {
 
     font-family: var(--mono);
 
-    font-size: 9px;
+    font-size: 11px;
 
     transition: color .3s;
 
@@ -1240,7 +1240,7 @@ nav.scrolled {
             rgba(3,3,3,.55) 65%,
             rgba(3,3,3,.35) 100%
         ),
-        url("ChatGPT\ Image\ Aug\ 10\,\ 2026\,\ 04_08_48\ PM.png");
+        url("https://res.cloudinary.com/sn8krgue/image/upload/v1786654104/ChatGPT_Image_Aug_10_2026_04_08_48_PM.png");
 
     background-size: cover;
     background-position: center;
@@ -2822,7 +2822,7 @@ nav.scrolled {
 
     font-family: var(--mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     color: #8dd5a0;
 
@@ -4623,7 +4623,7 @@ footer code {
                 rgba(3,3,3,.45) 45%,
                 rgba(3,3,3,.92) 100%
             ),
-            url("mobile\ img.png");
+            url("https://res.cloudinary.com/sn8krgue/image/upload/v1786654106/mobile_img.png");
 
         background-size: cover;
 
@@ -4692,6 +4692,33 @@ footer code {
         padding:
             45px 20px
             80px !important;
+    }
+
+}
+/* ==========================================
+   MOBILE - FULL PAGE BACKGROUND IMAGE
+========================================== */
+
+@media (max-width: 767px) {
+
+    body {
+        background-color: #090806;
+
+        background-image:
+            linear-gradient(
+                rgba(8, 6, 5, .72),
+                rgba(8, 6, 5, .78)
+            ),
+            url("https://res.cloudinary.com/sn8krgue/image/upload/v1786654195/mobile_bg.png");
+
+        background-size: cover;
+
+        background-position: center top;
+
+        background-repeat: no-repeat;
+
+        /* mobile / Safari ke liye fixed mat rakho */
+        background-attachment: scroll;
     }
 
 }

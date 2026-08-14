@@ -295,7 +295,7 @@ nav.scrolled {
         var(--mono);
 
     font-size:
-        8px;
+        11px;
 
     text-decoration:
         none;
@@ -1384,7 +1384,7 @@ footer > p {
         var(--mono);
 
     font-size:
-        7px;
+        10px;
 
     letter-spacing:
         2px;
@@ -1417,7 +1417,7 @@ footer code {
         var(--mono);
 
     font-size:
-        7px;
+        10px;
 
     color:
         var(--gold);

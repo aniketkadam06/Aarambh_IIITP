@@ -2877,7 +2877,7 @@ footer {
 
     font-family: var(--mono);
 
-    font-size: 8px;
+    font-size: 10px;
 
     letter-spacing: 2px;
 
@@ -2914,7 +2914,7 @@ footer p {
 
     font-family: var(--mono);
 
-    font-size: 7px;
+    font-size: 10px;
 
     letter-spacing: 3px;
 
@@ -2933,7 +2933,7 @@ footer code {
 
     font-family: var(--mono);
 
-    font-size: 8px;
+    font-size: 10px;
 
 }
 .instagram-link {
@@ -2949,7 +2949,7 @@ footer code {
 
     font-family: var(--mono);
 
-    font-size: 8px;
+    font-size: 10px;
 
     letter-spacing: 1.5px;
 
@@ -3722,7 +3722,7 @@ footer code {
     }
 
     .nav-links a {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     .system-live {

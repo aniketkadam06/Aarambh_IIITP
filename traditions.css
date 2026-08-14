@@ -208,7 +208,7 @@ nav.scrolled {
 
     font-family: var(--mono);
 
-    font-size: 8px;
+    font-size: 11px;
 
 }
 
@@ -623,7 +623,7 @@ footer p {
 
     font-family: var(--mono);
 
-    font-size: 7px;
+    font-size: 10px;
 
     color:
         rgba(255,255,255,.3);
@@ -651,7 +651,7 @@ footer code {
 
     color: var(--gold);
 
-    font-size: 7px;
+    font-size: 10px;
 
     opacity: .4;
 

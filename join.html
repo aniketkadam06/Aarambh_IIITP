@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Join Aarambh | IIIT Pune
+    </title>
+
+
+    <!-- FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://res.cloudinary.com/sn8krgue/image/upload/v1786532656/aarambh-logo1.png"
+>
+
+<link
+    rel="apple-touch-icon"
+    href="https://res.cloudinary.com/sn8krgue/image/upload/v1786532656/aarambh-logo1.png"
+>
+    
+
+
+    <style>
+
+        :root {
+
+            --bg: #070707;
+
+            --text: #f4eee4;
+
+            --muted:
+                rgba(244,238,228,.48);
+
+            --gold:
+                #e1aa55;
+
+            --gold-light:
+                #f5ce8a;
+
+            --mono:
+                "DM Mono",
+                monospace;
+
+            --serif:
+                "Cinzel",
+                serif;
+
+            --sans:
+                "Manrope",
+                sans-serif;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+
+            box-sizing:
+                border-box;
+        }
+
+
+        html,
+        body {
+
+            width: 100%;
+
+            min-height:
+                100%;
+
+            background:
+                var(--bg);
+
+            color:
+                var(--text);
+
+            overflow-x:
+                hidden;
+        }
+
+
+        body {
+
+            font-family:
+                var(--sans);
+
+            min-height:
+                100vh;
+        }
+
+
+
+        /* ==========================================
+           GRID BACKGROUND
+        ========================================== */
+
+        .grid-bg {
+
+            position:
+                fixed;
+
+            inset:
+                0;
+
+            pointer-events:
+                none;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255,255,255,.028)
+                    1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.028)
+                    1px,
+                    transparent 1px
+                );
+
+            background-size:
+                78px 78px;
+
+            z-index:
+                0;
+        }
+
+
+
+        /* ==========================================
+           NAVBAR
+        ========================================== */
+
+        nav {
+
+            position:
+                fixed;
+
+            top:
+                0;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            height:
+                76px;
+
+            padding:
+                0 5%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            z-index:
+                20;
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,.06);
+
+            background:
+                rgba(5,5,5,.65);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            backdrop-filter:
+                blur(18px);
+        }
+
+
+        .nav-logo {
+
+            font-family:
+                var(--serif);
+
+            color:
+                var(--text);
+
+            text-decoration:
+                none;
+
+            font-size:
+                15px;
+
+            font-weight:
+                600;
+
+            letter-spacing:
+                3px;
+        }
+
+
+        .nav-logo span {
+
+            color:
+                var(--gold);
+        }
+
+
+        .back {
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                2px;
+
+            text-decoration:
+                none;
+
+            color:
+                rgba(255,255,255,.45);
+
+            transition:
+                .3s ease;
+        }
+
+
+        .back:hover {
+
+            color:
+                var(--gold-light);
+        }
+
+
+
+        /* ==========================================
+           JOIN PAGE
+        ========================================== */
+
+        .join-page {
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+            min-height:
+                100vh;
+
+            padding:
+                140px 7%
+                80px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.1fr .9fr;
+
+            align-items:
+                center;
+
+            gap:
+                8%;
+        }
+
+
+
+        /* ==========================================
+           LEFT CONTENT
+        ========================================== */
+
+        .section-code {
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                4px;
+
+            color:
+                var(--gold);
+
+            margin-bottom:
+                22px;
+        }
+
+
+        .join-command {
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                10px;
+
+            color:
+                rgba(255,255,255,.35);
+
+            margin-bottom:
+                30px;
+        }
+
+
+        .join-command span {
+
+            color:
+                #73cc8a;
+
+            margin-right:
+                10px;
+        }
+
+
+        .join-content h1 {
+
+            font-family:
+                var(--serif);
+
+            font-size:
+                clamp(
+                    62px,
+                    8vw,
+                    120px
+                );
+
+            line-height:
+                .94;
+
+            font-weight:
+                500;
+        }
+
+
+        .join-content h1 span {
+
+            display:
+                block;
+
+            color:
+                var(--gold-light);
+        }
+
+
+        .join-content > p {
+
+            margin-top:
+                35px;
+
+            max-width:
+                520px;
+
+            font-size:
+                14px;
+
+            line-height:
+                1.9;
+
+            color:
+                var(--muted);
+        }
+
+
+
+        /* ==========================================
+           QR
+        ========================================== */
+
+        .qr-area {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+
+        .qr-card {
+
+            position:
+                relative;
+
+            width:
+                min(
+                    430px,
+                    100%
+                );
+
+            padding:
+                28px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.10);
+
+            background:
+                rgba(255,255,255,.025);
+
+            text-align:
+                center;
+        }
+
+
+        .qr-card::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                -1px;
+
+            top:
+                -1px;
+
+            width:
+                65px;
+
+            height:
+                1px;
+
+            background:
+                var(--gold);
+        }
+
+
+        .qr-card::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                -1px;
+
+            top:
+                -1px;
+
+            width:
+                1px;
+
+            height:
+                65px;
+
+            background:
+                var(--gold);
+        }
+
+
+        .qr-label {
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                7px;
+
+            letter-spacing:
+                3px;
+
+            color:
+                var(--gold);
+
+            margin-bottom:
+                22px;
+        }
+
+
+        .qr-box {
+
+            padding:
+                18px;
+
+            background:
+                #f4eee4;
+        }
+
+
+        .qr-box img {
+
+            display:
+                block;
+
+            width:
+                100%;
+
+            aspect-ratio:
+                1;
+
+            object-fit:
+                contain;
+        }
+
+
+        .qr-card h2 {
+
+            margin-top:
+                24px;
+
+            font-family:
+                var(--serif);
+
+            font-size:
+                25px;
+
+            font-weight:
+                500;
+        }
+
+
+        .qr-card p {
+
+            margin-top:
+                10px;
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                8px;
+
+            line-height:
+                1.8;
+
+            letter-spacing:
+                1px;
+
+            color:
+                rgba(255,255,255,.38);
+        }
+
+
+        .status {
+
+            margin-top:
+                25px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                9px;
+
+            font-family:
+                var(--mono);
+
+            font-size:
+                7px;
+
+            letter-spacing:
+                2px;
+
+            color:
+                rgba(255,255,255,.35);
+        }
+
+
+        .status span {
+
+            width:
+                6px;
+
+            height:
+                6px;
+
+            border-radius:
+                50%;
+
+            background:
+                #73cc8a;
+
+            box-shadow:
+                0 0 10px
+                rgba(115,204,138,.6);
+        }
+
+
+
+        /* ==========================================
+           MOBILE
+        ========================================== */
+
+        @media(max-width:767px) {
+
+            nav {
+
+                height:
+                    64px;
+
+                padding:
+                    0 18px;
+            }
+
+
+            .nav-logo {
+
+                font-size:
+                    12px;
+
+                letter-spacing:
+                    2px;
+            }
+
+
+            .join-page {
+
+                min-height:
+                    auto;
+
+                grid-template-columns:
+                    1fr;
+
+                padding:
+                    115px 20px
+                    70px;
+
+                gap:
+                    65px;
+            }
+
+
+            .join-content h1 {
+
+                font-size:
+                    clamp(
+                        48px,
+                        14vw,
+                        65px
+                    );
+            }
+
+
+            .join-content > p {
+
+                font-size:
+                    11px;
+
+                margin-top:
+                    25px;
+            }
+
+
+            .qr-card {
+
+                width:
+                    100%;
+
+                max-width:
+                    360px;
+
+                padding:
+                    20px;
+            }
+
+
+            .qr-card h2 {
+
+                font-size:
+                    21px;
+            }
+
+        }
+/* =====================================================
+   JOIN PAGE - MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
+        height: 64px;
+        padding: 0 18px;
+    }
+
+    .nav-logo {
+        font-size: 12px;
+        letter-spacing: 2px;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    .back {
+        font-size: 7px;
+        letter-spacing: 1.4px;
+        white-space: nowrap;
+    }
+
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    .join-page {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding:
+            105px 20px
+            65px;
+
+        gap: 45px;
+    }
+
+
+    /* =========================
+       LEFT CONTENT
+    ========================= */
+
+    .join-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .section-code {
+        margin-bottom: 16px;
+
+        font-size: 7px;
+        letter-spacing: 2.5px;
+    }
+
+    .join-command {
+        margin-bottom: 22px;
+
+        font-size: 8px;
+    }
+
+    .join-content h1 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size:
+            clamp(
+                44px,
+                13vw,
+                60px
+            );
+
+        line-height: .96;
+
+        letter-spacing: -.025em;
+
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .join-content h1 span {
+        display: block;
+    }
+
+    .join-content > p {
+        margin-top: 24px;
+
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+
+    /* =========================
+       QR AREA
+    ========================= */
+
+    .qr-area {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qr-card {
+        width: 100%;
+        max-width: 350px;
+
+        padding: 18px;
+
+        margin-inline: auto;
+    }
+
+    .qr-card::before,
+    .qr-card::after {
+        width: 48px;
+        height: 48px;
+    }
+
+    .qr-label {
+        margin-bottom: 16px;
+
+        font-size: 6px;
+        letter-spacing: 2.5px;
+    }
+
+
+    /* =========================
+       QR IMAGE
+    ========================= */
+
+    .qr-box {
+        width: 100%;
+
+        padding: 13px;
+
+        aspect-ratio: 1 / 1;
+    }
+
+    .qr-box img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       QR TEXT
+    ========================= */
+
+    .qr-card h2 {
+        margin-top: 19px;
+
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    .qr-card > p {
+        margin-top: 9px;
+
+        font-size: 7px;
+        line-height: 1.8;
+
+        letter-spacing: .8px;
+    }
+
+    .status {
+        margin-top: 18px;
+
+        gap: 7px;
+
+        font-size: 6px;
+        letter-spacing: 1.2px;
+    }
+
+    .status span {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    /* =========================
+       TOUCH DEVICE
+    ========================= */
+
+    .qr-card:hover {
+        transform: none;
+    }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   320px - 430px
+===================================================== */
+
+@media (max-width: 430px) {
+
+    nav {
+        padding:
+            0 14px;
+    }
+
+    .nav-logo {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .back {
+        font-size: 6.5px;
+    }
+
+
+    .join-page {
+        padding:
+            95px 16px
+            55px;
+
+        gap: 38px;
+    }
+
+
+    .section-code {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+
+    .join-content h1 {
+        font-size:
+            clamp(
+                40px,
+                12.8vw,
+                52px
+            );
+    }
+
+    .join-content > p {
+        font-size: 10.5px;
+    }
+
+
+    .qr-card {
+        max-width: 330px;
+
+        padding: 15px;
+    }
+
+    .qr-box {
+        padding: 11px;
+    }
+
+    .qr-card h2 {
+        font-size: 18px;
+    }
+
+    .qr-card > p {
+        font-size: 6.5px;
+    }
+
+    .status {
+        font-size: 5.5px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONE
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .join-page {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .join-content h1 {
+        font-size: 39px;
+    }
+
+    .qr-card {
+        padding: 13px;
+    }
+
+    .qr-card h2 {
+        font-size: 17px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE LANDSCAPE
+===================================================== */
+
+@media
+(max-height: 520px)
+and
+(orientation: landscape) {
+
+    .join-page {
+        min-height: auto;
+
+        padding:
+            90px 35px
+            45px;
+
+        gap: 35px;
+    }
+
+    .join-content h1 {
+        font-size: 44px;
+    }
+
+    .join-content > p {
+        margin-top: 15px;
+    }
+
+    .qr-card {
+        max-width: 300px;
+    }
+}
+
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none),
+(pointer: coarse) {
+
+    .qr-card:hover {
+        transform: none;
+
+        border-color:
+            rgba(255,255,255,.10);
+    }
+
+    .back:hover {
+        transform: none;
+    }
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="grid-bg"></div>
+
+
+<!-- ==========================================
+     NAVBAR
+========================================== -->
+
+<nav>
+
+    <a
+        href="./index.html"
+        class="nav-logo"
+    >
+
+        <span>
+            &lt;
+        </span>
+
+        AARAMBH
+
+        <span>
+            /&gt;
+        </span>
+
+    </a>
+
+
+    <a
+        href="./index.html#culture"
+        class="back"
+    >
+        ← BACK
+    </a>
+
+</nav>
+
+
+
+<!-- ==========================================
+     JOIN
+========================================== -->
+
+<main class="join-page">
+
+
+    <!-- LEFT -->
+
+    <div class="join-content">
+
+
+        <div class="section-code">
+            04 / JOIN_PROTOCOL
+        </div>
+
+
+        <div class="join-command">
+
+            <span>$</span>
+
+            connect(aarambh);
+
+        </div>
+
+
+        <h1>
+
+            JOIN
+
+            <span>
+                AARAMBH.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Culture is built by the people
+            who choose to be part of it.
+
+            Scan the QR code and take your
+            first step into the Aarambh
+            Cultural Community at IIIT Pune.
+
+        </p>
+
+
+    </div>
+
+
+
+    <!-- RIGHT / QR -->
+
+    <div class="qr-area">
+
+
+        <div class="qr-card">
+
+
+            <div class="qr-label">
+                SCAN / CONNECT
+            </div>
+
+
+            <div class="qr-box">
+
+                <img
+                    src="https://res.cloudinary.com/sn8krgue/image/upload/v1786702588/WhatsApp_Image_2026-08-14_at_15.45.02.jpg"
+                    alt="Join Aarambh QR Code"
+                >
+
+            </div>
+
+
+            <h2>
+                Become Part of Aarambh
+            </h2>
+
+
+            <p>
+
+                SCAN THE QR CODE
+                <br>
+
+                OPEN THE FORM
+                <br>
+
+                JOIN THE COMMUNITY
+
+            </p>
+
+
+            <div class="status">
+
+                <span></span>
+
+                REGISTRATION LINK ACTIVE
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+</body>
+
+</html>

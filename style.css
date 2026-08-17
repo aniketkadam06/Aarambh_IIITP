@@ -648,7 +648,7 @@ body {
         1px solid rgba(255,255,255,.09);
 
     background: rgba(0,0,0,.4);
-
+-webkit-backdrop-filter:blur(15px) ;
     backdrop-filter: blur(15px);
 
     font-family: var(--mono);
@@ -1071,7 +1071,7 @@ nav.scrolled {
     border-bottom:
 
         1px solid rgba(255,255,255,.07);
-
+-webkit-backdrop-filter:blur(18px) ;
     backdrop-filter: blur(18px);
 
 }
@@ -2126,7 +2126,7 @@ nav.scrolled {
     background:
 
         rgba(0,0,0,.38);
-
+-webkit-backdrop-filter:blur(10px) ;
     backdrop-filter:
 
         blur(10px);
@@ -2209,7 +2209,7 @@ nav.scrolled {
     background:
 
         rgba(255,255,255,.07);
-
+-webkit-backdrop-filter:blur(10px) ;
     backdrop-filter:
 
         blur(10px);

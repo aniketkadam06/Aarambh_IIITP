@@ -3884,8 +3884,8 @@ footer code {
         cursor: auto;
     }
 
-    #cursor,
-    #mouseGlow {
+    #cursor
+    {
         display: none;
     }
 
@@ -4721,4 +4721,34 @@ footer code {
         background-attachment: scroll;
     }
 
+}
+/* ===================================================
+   NORMAL SYSTEM CURSOR
+   Keep mouse glow enabled
+=================================================== */
+
+/* Normal arrow cursor */
+html,
+body {
+    cursor: auto !important;
+}
+
+
+/* Remove custom Aarambh cursor */
+#cursor {
+    display: none !important;
+}
+
+
+/* Clickable elements */
+a,
+button,
+.magnetic-button,
+#enterBtn,
+.event-card,
+.video-close,
+.player-controls button,
+.terminal-link,
+.nav-instagram {
+    cursor: pointer !important;
 }

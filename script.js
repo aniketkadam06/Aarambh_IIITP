@@ -8,7 +8,7 @@ const events = [
         category: "CELEBRATION",
         type: "TRADITION_01",
         quote: "Where devotion meets celebration.",
-        video: "./videos/ganesh chaturthi.mp4"
+        video: "https://res.cloudinary.com/sn8krgue/video/upload/v1787062351/ganesh_chaturthi.mp4"
     },
 
     {
@@ -16,7 +16,7 @@ const events = [
         category: "TRADITION",
         type: "TRADITION_02",
         quote: "Colours. Traditions. Togetherness.",
-        video: "./videos/onam.mp4"
+        video: "https://res.cloudinary.com/sn8krgue/video/upload/v1787062369/onam.mp4"
     },
 
     {
@@ -24,30 +24,12 @@ const events = [
         category: "LEGACY",
         type: "TRADITION_03",
         quote: "A celebration of courage and legacy.",
-        video: "./videos/shivjaynati.mp4"
+        video: "https://res.cloudinary.com/sn8krgue/video/upload/v1787062349/shivjaynati.mp4"
     },
 
-    {
-        title: "Navratri",
-        category: "FESTIVAL",
-        type: "TRADITION_04",
-        quote: "Nine nights. One celebration.",
+    
 
-        // Replace with Cloudinary URL later
-        video:
-            "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-    },
-
-    {
-        title: "Aarambh Memories",
-        category: "COMMUNITY",
-        type: "MEMORY_ARCHIVE",
-        quote: "The moments we never forget.",
-
-        // Replace with Cloudinary URL later
-        video:
-            "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-    }
+   
 ];
 
 

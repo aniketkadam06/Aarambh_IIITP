@@ -534,6 +534,13 @@ body {
 
     background-size: 70px 70px;
 
+    -webkit-mask-image:
+
+        radial-gradient(
+            circle at center,
+            black,
+            transparent 80%
+        );
     mask-image:
 
         radial-gradient(
@@ -845,8 +852,9 @@ body {
     background-size: 250%;
 
     -webkit-background-clip: text;
+background-clip: text;
 
-    -webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent;
 
     animation:
 
@@ -2254,7 +2262,7 @@ nav.scrolled {
 
     position: relative;
 
-    min-height: auto;
+    min-height: 0;
 
     padding:
         65px 8%
@@ -4108,7 +4116,7 @@ footer code {
     =================================================== */
 
     .experiences {
-        min-height: auto;
+        min-height: 0;
         padding: 90px 0 70px;
     }
 
@@ -4202,7 +4210,7 @@ footer code {
     =================================================== */
 
     .culture-section {
-        min-height: auto;
+        min-height: 0;
         grid-template-columns: 1fr;
         padding: 90px 22px;
         gap: 70px;
@@ -4677,7 +4685,7 @@ footer code {
 @media (max-width: 767px) {
 
     .quote-section {
-        min-height: auto !important;
+        min-height: 0 !important;
 
         padding:
             55px 22px

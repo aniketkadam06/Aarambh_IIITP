@@ -1396,7 +1396,7 @@ footer code {
 }@media (max-width: 600px) {
 
     .archive-hero {
-        min-height: auto !important;
+        min-height: 0 !important;
 
         padding:
             110px 20px
